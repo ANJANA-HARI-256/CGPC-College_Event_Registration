@@ -6,11 +6,11 @@ body{
 
 }
 .form-container {
-    width: 400px;
+    width: 700px;
     margin: 60px auto;
-    background: white;
+    background: rgb(239, 232, 232);
     padding: 20px 30px;
-    border-radius: 20px;
+    border-radius: 100px;
     animation: slideIn 1s ease;
 }
 @keyframes slideIn{
@@ -29,8 +29,22 @@ body{
 } 
 button{
     background-color: blueviolet;
-    transition: background-color 0.3s;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: background-color 0.3s ease,transform 0.2s ease;
 }
-button: hover{
-    background-color: purple;
+button:hover{
+    background-color: rgb(32, 10, 32);
+    transform: scale(1.05)
 }
+@media (max-width: 768px){
+    .form-container{
+        width: 90%;
+        margin: 20px auto;
+        border-radius: 20px;
+    }
+}
+
